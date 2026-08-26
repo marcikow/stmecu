@@ -22,3 +22,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Python package build artifacts
+src/*.egg-info/
