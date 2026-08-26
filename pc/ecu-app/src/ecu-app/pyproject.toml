@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecu-app"
+version = "0.1.0"
+description = "Diagnostic, calibration and tuning tool for the STM32 ECU project"
+authors = [
+    {name = "Marcin Kowalski", email = "marcin.kowalskile@gmail.com"}
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    # None for now
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
