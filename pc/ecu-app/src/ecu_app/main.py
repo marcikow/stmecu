@@ -34,7 +34,7 @@ class MainWindow(QMainWindow):
         # Layout
         main_layout = QVBoxLayout()
 
-        main_layout.setContentsMargins(0, 0, 0, 0)
+        main_layout.setContentsMargins(15, 15, 15, 15)
 
         # Central widget
         central_widget = QWidget()
@@ -66,7 +66,7 @@ class MainWindow(QMainWindow):
 
         # ECU STATUS LABELS
         status_label = QLabel("ECU STATUS")
-        status_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        #status_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         left_layout.addWidget(status_label)
 
         self.conn_label = QLabel("Connected: NO")
@@ -92,7 +92,7 @@ class MainWindow(QMainWindow):
 
         # LIVE DATA LABELS
         live_data_label = QLabel("LIVE DATA")
-        live_data_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        #live_data_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         right_layout.addWidget(live_data_label)
 
         rpm_label = QLabel("RPM: ---")
